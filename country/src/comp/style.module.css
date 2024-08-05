@@ -1,0 +1,83 @@
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 80%;
+  }
+  
+  .searchBar {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .searchBar input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .searchBar button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchBar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .country {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .country h2 {
+    color: #343a40;
+    margin-bottom: 1rem;
+  }
+  
+  .country p {
+    margin-bottom: 0.5rem;
+    color: #495057;
+  }
+  
+  .country img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .searchBar {
+      flex-direction: column;
+    }
+  
+    .searchBar input,
+    .searchBar button {
+      width: 100%;
+      border-radius: 4px;
+    }
+  
+    .searchBar input {
+      margin-bottom: 0.5rem;
+    }
+  }
